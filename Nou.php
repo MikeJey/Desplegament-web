@@ -16,7 +16,7 @@
             if ($resultado->num_rows > 0) {
 
                 echo '<div class="container mt-5" style="margin-bottom: 200px"> 
-                        <h2>Afegir producte</h2>
+                        <h2>Dodaj produkt</h2>
                         <hr>';
                 echo '<form action="Nou.php" method="POST">
                         <div class="mb-3">
