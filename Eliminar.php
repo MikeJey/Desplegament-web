@@ -9,7 +9,7 @@
             
             if (!isset($id) || !is_numeric($id)) {
                 echo '<p>ID de producto no válido.</p>';
-                return; 
+                return;
             }
             
             $conexionObj = new Connexio();
