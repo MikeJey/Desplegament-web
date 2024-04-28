@@ -19,7 +19,7 @@
             $resultado = $conexion->query($consulta);
             
             echo '<div class="container mt-5" style="margin-bottom: 200px"> 
-                    <h2>Eliminar producte</h2>
+                    <h2>Usuń produkt</h2>
                     <hr>
                     <p>';
             
