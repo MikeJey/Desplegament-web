@@ -3,6 +3,9 @@
     require_once('Connexio.php');
     require_once('Header.php');
     
+    /**
+     * Clase que se encarga de gestionar la eliminación de productos.
+     */
     class Eliminar {
         
         /**
