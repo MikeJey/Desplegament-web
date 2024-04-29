@@ -6,9 +6,9 @@
 
 <div align="center">
   <ul style="list-style: none; display: inline-flex;">
-    <li><strong>> </strong><a href="#clases" style="text-decoration: none;">Clases</a></li>
-    <li><strong>> </strong><a href="#funciones" style="text-decoration: none;">Funciones</a></a></li>
-    <li><strong>> </strong><a href="#acerca-de" style="text-decoration: none;">Acerca de</a></a></li>
+    <li><strong>> </strong><a href="#clases" style="text-decoration: none; color: #d18b1f;">Clases</a></li>
+    <li><strong>> </strong><a href="#funciones" style="text-decoration: none; color: #d18b1f;">Funciones</a></a></li>
+    <li><strong>> </strong><a href="#acerca-de" style="text-decoration: none; color: #d18b1f;">Acerca de</a></a></li>
   </ul>
 </div>
 
