@@ -3,8 +3,16 @@
     require_once('Connexio.php');
     require_once('Header.php');
 
+    /**
+     * Clase que se encarga de gestionar la introducción de nuevos productos.
+     */
     class Nou {
 
+        /** 
+         * Esta función se conecta a la base de datos y, siempre que el $resultado
+         * no esté vacío, generará el documento HTML con la información necesaria
+         * para crear un nuevo producto.
+         */
         public function nouProducte() {
 
             $conexionObj = new Connexio();
@@ -50,6 +58,11 @@
                         </form>';
             }
 
+            /**
+             * Si se detecta el método POST, entonces se recogerán los valores del
+             * formulario, y se generará el ID del nuevo producto en base al ID
+             * más alto disponible hasta el momento.
+             */
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 $consulta_maxId = "SELECT MAX(id) + 1 FROM productes;";
@@ -66,6 +79,11 @@
                                         VALUES (?, ?, ?, ?, ?)");
                 $stmt->bind_param("issdi", $id, $nom, $descripcio, $preu, $categoria_id);
 
+                /**
+                 * Se comprueba el 'statement' y si la ejecución es correcta, se 
+                 * avisará al usuario mediante un mensaje. En caso contrario, también
+                 * se le avisará, añadiendo también el mensaje de error.
+                 */
                 if ($stmt->execute()) {
                     echo '<hr>
                             <p style="margin-top: 15px; color: green; text-align: center;">
